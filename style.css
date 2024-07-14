@@ -649,7 +649,13 @@ section {
   .home-img img {
     width: 52vw;
   }
-
+  .home-content h1{
+    font-size: 5rem;
+  }
+  .home-content h3{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
   .about {
     flex-direction: column-reverse;
     text-align: center;
@@ -685,6 +691,6 @@ section {
     grid-template-columns: repeat(1,1fr);
   }
   .projects-box img{
-    min-width: 42rem;
+    min-width: 38rem;
   }
 }
