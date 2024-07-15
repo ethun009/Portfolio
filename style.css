@@ -16,6 +16,7 @@ html {
   overflow-x: hidden;
 }
 
+
 :root {
   --bg-color: #080808;
 --text-color: rgb(255, 255, 255);
@@ -30,7 +31,77 @@ html {
   --second-bg-color: rgb(170, 181, 173);
 }
 
+.blue {
+  --main-color: #00f5ff;
+  --bg-color: #080808;
+  --text-color: rgb(255, 255, 255);
+  --second-bg-color: #001005;
+}
+.purple {
+  --main-color: #bb00ff;
+  --bg-color: #080808;
+  --text-color: rgb(255, 255, 255);
+  --second-bg-color: #001005;
+}
+.pink {
+  --main-color: rgb(255 0 211);
+  --bg-color: #080808;
+  --text-color: rgb(255, 255, 255);
+  --second-bg-color: #001005;
+}
+.blue-white {
+  --main-color: #00f5ff;
+  --bg-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --second-bg-color: rgb(170, 181, 173);
+}
+.purple-white {
+  --main-color: #bb00ff;
+  --bg-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --second-bg-color: rgb(170, 181, 173);
+}
+.pink-white {
+  --main-color: rgb(255 0 211);
+  --bg-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --second-bg-color: rgb(170, 181, 173);
+}
 
+.theme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 20%;
+  padding: 1rem 3rem;
+  background-color: var(--bg-color);
+  border-left: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  border-bottom-left-radius: 2rem;
+
+  
+}
+.theme a {
+  display: block;
+  font-size: 2rem;
+  margin: 3rem 0;
+  font-size: 1.8rem;
+  color: rgb(95, 88, 88);
+  margin-left: 4rem;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 3px solid var(--main-color);
+  color: var(--main-color);
+}
 body {
   background: var(--bg-color);
   color: var(--text-color);
@@ -635,6 +706,26 @@ section {
     display: block;
   }
 
+
+  .theme {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3rem;
+    background-color: var(--bg-color);
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-bottom-left-radius: 2rem;
+  
+    
+  }
+  .theme a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  
   .home {
     flex-direction: column-reverse;
     margin: 5rem 0;
