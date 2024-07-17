@@ -783,5 +783,6 @@ section {
   }
   .projects-box img{
     min-width: 38rem;
+    max-height: 20rem;
   }
 }
